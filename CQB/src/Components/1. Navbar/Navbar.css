@@ -59,6 +59,7 @@ body {
 }
 
 .logo-h1 {
+    font-size: 25px;
     font-family: "Space Mono", serif;
     color: #7b00ff;
 }
