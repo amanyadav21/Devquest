@@ -1,16 +1,15 @@
 /* Base Styles */
 
-body {
-    background-color: #18230F;
-}
 .maindiv {
     font-family: "Space Grotesk", serif;
-    margin: 0px 50px;
+    /* margin: 0px 50px; */
+    padding: 0px 50px;
     min-height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #18230F;
     /* background: radial-gradient(circle, rgb(251, 223, 203) 0%, rgba(255, 255, 255, 1) 40%); */
 }
 
