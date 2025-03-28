@@ -112,6 +112,8 @@ body {
         margin: 10px 0;
         font-weight: 700;
         text-align: start;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     .maindiv-text p {
@@ -155,6 +157,8 @@ body {
         margin: 10px 0;
         font-weight: 600;
         text-align: start;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     .maindiv-text p {
@@ -200,6 +204,8 @@ body {
       margin: 15px 0;
       font-weight: 600;
       text-align: start;
+      padding-left: 0px;
+      padding-right: 0px;
     }
   
     .maindiv-text p {
@@ -245,6 +251,8 @@ body {
         margin: 20px 0;
         font-weight: 600;
         text-align: center;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     .maindiv-text p {
@@ -291,6 +299,8 @@ body {
         margin: 25px 0;
         font-weight: 600;
         text-align: center;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     .maindiv-text p {
