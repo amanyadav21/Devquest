@@ -95,7 +95,8 @@
 /* Extra Small Screens (320px to 480px) */
 @media (max-width: 480px) {
     .maindiv {
-        margin: 0 15px;
+        /* margin: 0 15px; */
+        padding: 0 15px;
         padding: 20px;
     }
     #maindiv-span {
@@ -141,7 +142,8 @@
 /* Small Screens (481px to 576px) */
 @media (min-width: 481px) and (max-width: 576px) {
     .maindiv {
-        margin: 0 15px;
+        /* margin: 0 15px; */
+        padding: 0 15px;
         padding: 20px;
     }
     #maindiv-span {
@@ -186,7 +188,8 @@
 /* Tablets (567px to 768px) */
 @media (min-width: 577px) and (max-width: 768px) {
     .maindiv {
-      margin: 0 20px;
+      /* margin: 0 20px; */
+      padding: 0 20px;
       padding: 30px;
     }
   
@@ -233,7 +236,8 @@
 /* Large Tablets and Small Laptops (769px to 992px) */
 @media (min-width: 769px) and (max-width: 992px) {
     .maindiv {
-        margin: 0 30px;
+        /* margin: 0 30px; */
+        padding: 0 30px;
         padding: 40px;
     }
 
@@ -281,7 +285,8 @@
 /* Large Laptops (993px to 1200px) */
 @media (min-width: 993px) and (max-width: 1200px) {
     .maindiv {
-        margin: 0 50px;
+        /* margin: 0 50px; */
+        padding: 0 50px;
         padding: 50px;
     }
 
