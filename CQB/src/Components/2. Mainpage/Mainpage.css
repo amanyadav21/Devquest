@@ -1,4 +1,8 @@
 /* Base Styles */
+
+body {
+    background-color: #18230F;
+}
 .maindiv {
     font-family: "Space Grotesk", serif;
     margin: 0px 50px;
@@ -7,7 +11,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: radial-gradient(circle, rgb(251, 223, 203) 0%, rgba(255, 255, 255, 1) 40%);
+    /* background: radial-gradient(circle, rgb(251, 223, 203) 0%, rgba(255, 255, 255, 1) 40%); */
 }
 
 .maindiv-text {
@@ -35,16 +39,18 @@
 }
 
 .maindiv-text h1 {
-    color: rgb(255, 98, 0);
+    color: #7bbb9e;
     font-size: 70px;
+    padding-left: 40px;
+    padding-right: 40px;
     font-weight: 500;
 }
 
 .maindiv-text p {
-    color: rgb(0, 0, 0);
+    color: #ffffff;
     margin: 10px 250px;
     line-height: 25px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
 }
 
@@ -60,18 +66,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #00ED64;
+    background-color: #a2fd69;
     padding: 10px 30px;
     font-size: 18px;
     border-radius: 5px;
-    border: 1px solid black;
+    color: black;
+    border: 1px solid rgb(255, 255, 255);
     gap: 5px;
     transition: all 0.3s ease;
 }
 
 #maindiv-btn2 {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(0, 0, 0);
 }
 
 #maindiv-btn1:hover, #maindiv-btn2:hover {
@@ -337,7 +345,9 @@
     text-align: center;
     margin: 20px auto;
     font-weight: 200;
-    font-size: 2rem;
+    letter-spacing: 0px;
+    line-height: normal;
+    font-size: 1.7rem;
     max-width: 1200px;
 }
 
