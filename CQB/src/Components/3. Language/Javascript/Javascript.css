@@ -10,7 +10,7 @@
   box-sizing: border-box;
 }
 
-.question-item {
+/* .question-item {
   cursor: pointer;
   padding: 10px;
   border-bottom: 1px solid #ddd;
@@ -25,6 +25,85 @@
   white-space: pre-wrap;
   font-size: x-large;
 }
+ */
+
+
+ /* .completed {
+  text-decoration: line-through;
+  color: gray;
+} */
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem; /* Adjust text size */
+  font-family: Arial, sans-serif; /* Clean font */
+}
+
+.completed::before {
+  content: '✔'; /* Add the checkmark */
+  color: green; /* Set checkmark color */
+  margin-right: 8px; /* Space between checkmark and text */
+}
+
+
+
+/* .custom-checkbox {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  font-size: 18px;
+  user-select: none;
+}
+
+.custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.custom-checkbox input:checked ~ .checkmark {
+  background-color: #4caf50;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.custom-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.custom-checkbox .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 6px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+} */
 
 
 

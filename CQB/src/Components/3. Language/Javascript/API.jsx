@@ -1,31 +1,12 @@
-// const jsQuestions = {
-//   "IntroductionToJavaScript": [
-//     { id: 1, question: "Write a Hello World! program in JavaScript." },
-//     { id: 2, question: "What is JavaScript? Explain its main uses." },
-//     { id: 3, question: "Describe the differences between JavaScript and Java." },
-//     { id: 4, question: "What are the different ways to include JavaScript in a webpage?" },
-//     { id: 5, question: "Explain the role of the <script> tag in JavaScript." },
-//     { id: 6, question: "Write a program to print the current date and time in JavaScript." },
-//     { id: 7, question: "What are the key features of JavaScript?" },
-//   ],
-
 const jsQuestions = {
   "IntroductionToJavaScript": [
-    { 
-      id: 1, 
-      question: "Write a Hello World! program in JavaScript.",
-      answer: `console.log("Hello, World!");`
-    },
-    { 
-      id: 2, 
-      question: "What is JavaScript? Explain its main uses.", 
-      answer: "JavaScript is a scripting language used for web development, creating interactive web pages, and handling backend logic with Node.js." 
-    },
-    { 
-      id: 6, 
-      question: "Write a program to print the current date and time in JavaScript.",
-      answer: `console.log(new Date().toLocaleString());`
-    }
+    { id: 1, question: "Write a Hello World! program in JavaScript." },
+    { id: 2, question: "What is JavaScript? Explain its main uses." },
+    { id: 3, question: "Describe the differences between JavaScript and Java." },
+    { id: 4, question: "What are the different ways to include JavaScript in a webpage?" },
+    { id: 5, question: "Explain the role of the <script> tag in JavaScript." },
+    { id: 6, question: "Write a program to print the current date and time in JavaScript." },
+    { id: 7, question: "What are the key features of JavaScript?" },
   ],
 
   "VariablesAndDataTypes": [
