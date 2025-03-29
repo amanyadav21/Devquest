@@ -1,9 +1,17 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import pythonquestion from "./pyAPI";
 
 const PythonPage = () => {
   const [selectedTopic, setSelectedTopic] = useState("");
   const [displayedQuestions, setDisplayedQuestions] = useState([]);
+  const [completedQuestions, setCompletedQuestions] = useState(() => {
+    return JSON.parse(localStorage.getItem("completedQuestions")) || {};
+  })
+
+  useEffect(() => {
+    localStorage.setItem("completedQuestions",JSON.stringify(completedQuestions));
+  }, [completedQuestions]);
+
 
   const handleTopicChange = (event) => {
     const topic = event.target.value;
@@ -13,6 +21,22 @@ const PythonPage = () => {
     } else {
       setDisplayedQuestions([]);
     }
+  };
+
+
+  const handleCheckboxChange = (topic, id) => {
+    setCompletedQuestions((prev) => {
+      const updated = {
+        ...prev,
+        [topic]: {
+          ...prev[topic],
+          [id]: !prev[topic]?.[id],
+        },
+      };
+
+      localStorage.setItem("completedQuestions", JSON.stringify(updated));
+      return updated;
+    });
   };
 
   return (
@@ -44,7 +68,15 @@ const PythonPage = () => {
           {displayedQuestions.length > 0 ? (
             <ul className="question-box">
               {displayedQuestions.map((q) => (
-                <li key={q.id}>
+                <li key={q.id} className={completedQuestions[selectedTopic]?.[q.id] ? "completed" : ""}>
+                  <label className="custom-checkbox">
+                    <input 
+                    type="checkbox"
+                    checked={!!completedQuestions[selectedTopic]?.[q.id]} 
+                    onChange={() => handleCheckboxChange(selectedTopic, q.id)}
+                      />
+                    <span className="checkmark"></span>  
+                  </label>
                   <strong id="question-render">{q.question}</strong>
                 </li>
               ))}

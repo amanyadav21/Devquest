@@ -42,12 +42,20 @@
   font-family: Arial, sans-serif; /* Clean font */
 }
 
+/* .custom-checkbox:hover {
+  cursor: pointer;
+} */
+
+/* #checkkaro {
+  background: red;
+  font-size: 100px;
+} */
+
 .completed::before {
   content: '✔'; /* Add the checkmark */
-  color: green; /* Set checkmark color */
-  margin-right: 8px; /* Space between checkmark and text */
+  color: rgb(157, 255, 0); /* Set checkmark color */
+  margin-right: 10px; /* Space between checkmark and text */
 }
-
 
 
 /* .custom-checkbox {
