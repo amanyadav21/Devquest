@@ -4,6 +4,8 @@ import windturbine from './Wind Turbine.gif';
 import arrow from './right-arrow.png';
 import Javascript from './LanguageImage/js.png';
 import Python from './LanguageImage/python.png';
+import Java from './LanguageImage/java.png';
+import Sql from './LanguageImage/sql-server.png';
 import { Navigate, useNavigate } from 'react-router-dom';
 
 
@@ -103,7 +105,7 @@ const Mainpage = () => {
           <div className="java-card">
             <div className="card-top">
               <h2 className='card-h2'>Java</h2>
-              <img src={Javascript} alt="JavaIcon" className='card-img'/>
+              <img src={Java} alt="JavaIcon" className='card-img'/>
             </div>
             <p className='card-para'>180+ Java questions with code, categorized into Beginner, Intermediate, and Advanced levels—perfect for step-by-step mastery and building confidence!</p>
             <button className='card-btn'onClick={javaclick}>Java Path</button>
@@ -113,7 +115,7 @@ const Mainpage = () => {
           <div className="sql-card">
             <div className="card-top">
               <h2 className='card-h2'>SQL</h2>
-              <img src={Python} alt="SQL Icon" className='card-img'/>
+              <img src={Sql} alt="SQL Icon" className='card-img'/>
             </div>
             <p className='card-para'>150+ SQL questions with solutions, categorized into Beginner, Intermediate, and Advanced levels—ideal for step-by-step mastery and boosting database skills!</p>
             <button className='card-btn'onClick={sqlclick}>SQL Path</button>
