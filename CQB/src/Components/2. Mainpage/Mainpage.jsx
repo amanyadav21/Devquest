@@ -1,6 +1,5 @@
 import React from "react";
 import "./Mainpage.css";
-import windturbine from "./Wind Turbine.gif";
 import arrow from "./right-arrow.png";
 import Javascript from "./LanguageImage/js.png";
 import Python from "./LanguageImage/python.png";
@@ -51,10 +50,6 @@ const Mainpage = () => {
     <>
       <div className="maindiv">
         <div className="maindiv-text">
-          {/* <span id="maindiv-span">
-            Welcome to the Coding Question Repository.
-            <img src={windturbine} alt="Flash icon" id="maindiv-flashicon" />
-          </span> */}
           <h1>
             Unlock Your Coding Potential with Our Extensive Challenge Repository
           </h1>
