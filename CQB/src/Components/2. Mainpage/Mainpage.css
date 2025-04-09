@@ -365,7 +365,7 @@
     max-width: 1200px;
 }
 
-/* Language cards container */
+/* Container */
 .languagecard-content {
     display: flex;
     flex-wrap: wrap;
@@ -375,8 +375,8 @@
     width: 100%;
 }
 
-/* Individual language cards (base styles for all cards) */
-.js-card, .python-card, .java-card, .sql-card {
+/* Individual Card (common for all) */
+.language-card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -391,14 +391,13 @@
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
 }
 
-/* Hover effect for the language cards */
-.js-card:hover, .python-card:hover, .java-card:hover, .sql-card:hover {
+/* Hover effect (common) */
+.language-card:hover {
     transform: translateY(-10px);
-    /* box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); */
     box-shadow: -6px 6px 0px #ff8c00;
 }
 
-/* Card header section (title + image) */
+/* Card Header */
 .card-top {
     display: flex;
     justify-content: space-between;
@@ -406,19 +405,21 @@
     width: 100%;
 }
 
+/* Card Image */
 .card-img {
     width: calc(100% - 85%);
     border-radius: 10px;
     object-fit: cover;
 }
 
+/* Paragraph */
 .card-para {
     margin-top: 40px;
     margin-bottom: 20px;
     text-align: start;
 }
 
-/* Card button styles */
+/* Button */
 .card-btn {
     font-family: "Space Mono", serif;
     width: 80%;
@@ -433,10 +434,11 @@
     border: 1px solid black;
 }
 
-/* Hover effect for the button */
+/* Button Hover */
 .card-btn:hover {
     background-color: #ff8c00;
 }
+
 
 
 @media (max-width: 480px) {
